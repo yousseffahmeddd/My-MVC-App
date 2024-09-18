@@ -1,0 +1,16 @@
+﻿@model Demo.DAL.Models.Department
+
+@{
+    ViewData["Title"] = "Create";
+}
+<br />
+<h1>Create Page</h1>
+<br />
+
+<form asp-action="Create">
+    <partial name="DepartmentPartialView/_CreateEditPartialView" model="@Model" />
+
+    <input type="submit" value="Create" class="btn btn-primary" />
+    <a asp-controller="Department" asp-action="Index" class="btn btn-light">Back To List</a>
+</form>
+
